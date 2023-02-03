@@ -1,0 +1,63 @@
+body {
+    background-color: #2D2E35;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 { 
+    color: #FDA703;
+    margin-top: 4%;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    color: #FDA703;
+    text-align: flex-start;
+}
+
+
+.gerador-senha {
+    margin: 50px auto 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gerador-senha  .titulo-senha {
+    font-size: 30px;
+    background-color: #FDA703;;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  
+.gerador-senha .senha {
+    font-size: 30px;
+    background-color: white;
+    color: #FDA703;;
+    padding: 5px 10px;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+.infos {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.infos li {
+    flex-grow: 1;
+    max-width: 400px; /* largura máxima para cada li */
+    text-align: center;
+    padding: 20px;  
+    border: 2px solid #FDA703;
+    border-radius: 10px;
+
+}
+
+.texto-paragrafo {
+    font-style: italic;
+    color:white;
+}

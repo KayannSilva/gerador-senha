@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    
+    <link rel="stylesheet" href="src\style.css">
+    <link rel="stylesheet" href="src\reset.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+</head>
+<body>
+        <main>
+                <py-script>
+                        import random
+                      
+                        caract = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "!", "@", "#", "$", "%", "&", "*", "(", ")"]
+                      
+                        senha = ""
+                      
+                        for x in range(25):
+                          senha = senha + random.choices(caract)[0]
+                        js.document.querySelector("#senha").innerHTML = senha
+                </py-script>
+                <h1>GERADOR DE SENHA</h1>
+                <h2>Gere sua senha segura com 25 caracteres</h2>
+                <br>
+                <h3 id="teste"></h3>
+                <div class="gerador-senha">
+                        <span class="titulo-senha">Sua senha:</span><span id="senha" class="senha"></span>
+                </div>
+                <ul class="infos">
+                        <li>
+                                <h3>Kayann Silva</h3>
+                                <br>
+                                <p class="texto-paragrafo">"Sou apaixonado por programação e sempre soube que queria trabalhar com tecnologia. Estou muito feliz porque hoje posso fazer o que eu realmente gosto e aprender constantemente. Atualmente estou estudando Matemática Aplicada na Universidade Federal do Amazonas (UFAM) e fazendo um estágio na área de dados. Possuo conhecimento em Python e JavaScript e estou me esforçando para me aperfeiçoar no desenvolvimento de front-end, melhorando minhas habilidades em HTML, CSS e JavaScript."</p>
+                        </li>
+                        <li>
+                                <h3>Por que é importante ter uma senha segura?</h3>
+                                <br>
+                                <p class="texto-paragrafo">Proteção de dados pessoais: Uma senha segura com caracteres especiais ajuda a proteger informações pessoais como números de cartão de crédito, endereço de e-mail e outros dados sensíveis.
+
+                                        Prevenção de invasões de segurança: Uma senha forte é mais difícil de ser hackeada ou adivinhada, o que ajuda a prevenir invasões de segurança em contas de rede sociais, serviços de e-mail e outros sites on-line.
+                                        
+                                        Proteção de ativos financeiros: Se você possui uma conta bancária on-line ou usa serviços financeiros on-line, é importante ter uma senha segura com caracteres especiais para proteger seus ativos financeiros contra fraudes e outras ameaças à segurança.</p>
+                        </li>
+                </ul>
+        </main> 
+</body>
+</html>
